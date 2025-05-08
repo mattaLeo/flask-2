@@ -1,7 +1,9 @@
 <html>
     <body>
         {%for i in lista%}
-            <li>{{i}}</li>
+            {%if i%2 == 0%}
+                <li>{{i}}</li>
+            {%endif%}
         {%endfor%}
     </body>
 </html>
